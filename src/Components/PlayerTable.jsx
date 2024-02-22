@@ -6,7 +6,6 @@ import { DataGrid } from "@mui/x-data-grid";
 import { Button } from "@mui/material";
 
 const PlayerTable = ({ players }) => {
-
   return (
     <div className="PlayerTable">
       <div style={{ height: 600, width: 1200 }}>
@@ -29,6 +28,7 @@ const PlayerTable = ({ players }) => {
 export default PlayerTable;
 
 const columns = [
+  { field: 'fideId', headerName: 'FideId', width: 100 },
   {
     field: 'name',
     headerName: 'Player',
@@ -38,10 +38,8 @@ const columns = [
     )
   },
   { field: 'nationality', headerName: 'Nat', width: 120 },
-  { field: 'fideId', headerName: 'FideId', width: 100 },
   { field: 'born', headerName: 'Born', width: 150 },
-  { field: 'bornPlace', headerName: 'Born Place', width: 150, },
-  { field: 'earnGm', headerName: 'Earn GM', width: 100, },
+  { field: 'earnGM', headerName: 'Earn GM', width: 100, },
   { field: 'country', headerName: 'Country', width: 150, },
   {
     field: "action",

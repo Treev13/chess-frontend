@@ -3,7 +3,7 @@ import Loading from "../Components/Loading";
 import TournamentTable from "../Components/TournamentTable";
 
 const fetchTournaments = () => {
-    return fetch("/api/tours").then((res) => res.json());
+    return fetch("/api/tournaments").then((res) => res.json());
 };
 
 const TournamentList = () => {

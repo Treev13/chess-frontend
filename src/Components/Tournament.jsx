@@ -31,7 +31,6 @@ const Tournament = ({ tour, players }) => {
           pageSizeOptions={[5, 15, 50]}
         />
       </div>
-
     </div>
   )
 };
@@ -74,7 +73,7 @@ const columns = [
     },
   },
   {
-    field: 'o_elo_avg',
+    field: 'oEloAvg',
     headerName: 'OppElo Avg',
     type: 'number',
     width: 120,
@@ -86,13 +85,7 @@ const columns = [
     width: 120,
   },
   {
-    field: 'move_avg',
-    headerName: 'Moves',
-    type: 'number',
-    width: 120,
-  },
-  {
-    field: 'rating_change',
+    field: 'ratingChange',
     headerName: 'Change',
     type: 'number',
     width: 120,

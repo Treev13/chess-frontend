@@ -17,8 +17,8 @@ const Player = ({ player, tours }) => {
 
         <Typography gutterBottom variant="body2" align="center" component="div">
           FIDE Id: {player.fideId} - 
-          Born: {player.born} in {player.bornPlace} - 
-          Earn GM Title: {player.earnGm} for {player.country}
+          Born: {player.born} - 
+          Earn GM Title: {player.earnGM} for {player.country}
         </Typography>
 
         <Typography gutterBottom variant="body2" align="center" component="div">

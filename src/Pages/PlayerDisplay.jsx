@@ -5,11 +5,11 @@ import Loading from "../Components/Loading";
 import Player from "../Components/Player";
 
 const fetchPlayer = (id) => {
-  return fetch(`/api/players/player/${id}`).then((res) => res.json());
+  return fetch(`/api/player/${id}`).then((res) => res.json());
 };
 
 const fetchTournaments = (id) => {
-  return fetch(`/api/players/player/${id}/tours`).then((res) => res.json());
+  return fetch(`/api/player/${id}/tours`).then((res) => res.json());
 };
 
 const PlayerDisplayer = () => {

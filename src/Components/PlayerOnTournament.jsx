@@ -8,7 +8,7 @@ const PlayerOnTournament = ({ player, tour, matches, fide_id }) => {
         <h3>
           <Link to={`/tournament/${tour.id}`}>
             {tour.name}
-          </Link> - {tour.site} - {tour.start_date} - {tour.end_date}
+          </Link> - {tour.site} - {tour.startDate} - {tour.endDate}
         </h3>
       </div>
       <div>
